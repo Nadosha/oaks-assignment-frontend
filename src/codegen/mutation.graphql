@@ -1,0 +1,25 @@
+mutation updateProgress($step: UpdateStepsInput!) {
+    updateProgress(step: $step) {
+        id
+        title
+        completed
+        todo {
+            id
+            title
+            completed
+        }
+    }
+}
+
+mutation initiateProgress {
+    initiateProgress{
+        id
+        title
+        completed
+        todo {
+            id
+            title
+            completed
+        }
+    }
+}

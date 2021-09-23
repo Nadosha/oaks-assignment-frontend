@@ -1,0 +1,12 @@
+query getProgress {
+    getProgress {
+        id
+        completed
+        title
+        todo {
+            id
+            title
+            completed
+        }
+    }
+}
