@@ -51,9 +51,9 @@ const Progress: React.FC = () => {
     }).catch((err) => console.log(err));
   }
 
-  const initStartup = useCallback(async () => {
-    await initiateProgressMutation();
-  },[data])
+  const initStartup = () => {
+     initiateProgressMutation().catch((err) => console.log(err));
+  };
 
   useEffect(() => {
     (async function getFact() {

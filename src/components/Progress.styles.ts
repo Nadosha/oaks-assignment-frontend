@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Congratulation = styled.article`
+export const Congratulation = styled.div`
   width: 250px;
   margin: 0 auto;
   border: 25px solid #f2f2f2;
@@ -86,7 +86,6 @@ export const Button = styled.div `
   align-items: center;
   justify-content: center;
   height: 40px;
-  margin-left: auto;
   background: #0a91ab;
   color: white;
   font-weight: 900;
@@ -100,12 +99,9 @@ export const Button = styled.div `
     cursor: pointer;
   }
 
-  // Center NotificationButton
   & > * {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-\` ;
-`
+`;
