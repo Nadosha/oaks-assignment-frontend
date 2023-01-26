@@ -102,7 +102,7 @@ const Progress: React.FC = () => {
       <FormWrapper>
         <Title>My startup progress</Title>
         {steps.map((step: Step, index) => {
-          return (
+          return (index === 0 || steps[index - 1].completed) && (
               <StepItem key={step.id} >
                 <StepInfo>
                   <StepCounter>

@@ -17,8 +17,7 @@ export const StepsWrap = styled.main`
 `;
 
 export const FormWrapper = styled.form`
-  min-width: 250px;
-  width: auto;
+  width: 280px;
   padding: 10px 15px 10px 15px;
   border: 25px solid #f2f2f2;
 `;
