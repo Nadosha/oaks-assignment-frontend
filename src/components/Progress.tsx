@@ -29,7 +29,7 @@ const Progress: React.FC = () => {
   const [isProgressCompleted, setProgressCompleted] = useState<boolean>(false);
   const [randomText, setRandomText] = useState<string | undefined>(undefined);
 
-  const [updateProgress] = useUpdateProgressMutation();
+  const [updateProgressMutation] = useUpdateProgressMutation();
   const [initiateProgressMutation] = useInitiateProgressMutation({
     refetchQueries: [{query: GetProgressDocument}],
     awaitRefetchQueries: true,
@@ -40,7 +40,7 @@ const Progress: React.FC = () => {
     const stepId = evt.target.dataset.step || '';
     const value = evt.target.checked;
 
-    updateProgress({
+    updateProgressMutation({
       variables: {
         step: {
           todoId: todoId,
